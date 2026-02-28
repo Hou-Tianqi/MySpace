@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 20px;
+}
+a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+a:hover {
+  background-color: #45a049;
+}
+/* Counter styles */
+.counter-wrap {
+  margin: 40px auto 0;
+  max-width: 420px;
+  background: linear-gradient(135deg,#ffffffcc,#e6f7ffcc);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(30,60,90,0.06);
+  text-align: center;
+}
+.count {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #0b6f9a;
+  display: inline-block;
+  min-width: 3ch;
+  transition: transform 240ms cubic-bezier(.2,.9,.3,1);
+}
+.count.pop {
+  transform: scale(1.18);
+}
+.inc-btn {
+    margin-top: 18px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    background: #0b6f9a;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(11,111,154,0.18);
+    transition: transform 160ms ease, box-shadow 160ms ease, background 160ms;
+}
+.inc-btn:active { transform: translateY(1px) scale(0.99); }
+.inc-btn:hover { background: #0e7aa9; }
+.label { color: #235; margin-bottom: 6px; display:block; }
+
+.GitHub {
+  background:none;
+  color: black;
+}
+.GitHub:hover{
+  background: none;
+  color: #0b6f9a;
+}
