@@ -59,27 +59,36 @@
     .inc-btn:active { transform: translateY(1px) scale(0.99); }
     .inc-btn:hover { background: #0e7aa9; }
     .label { color: #235; margin-bottom: 6px; display:block; }
+
+    .GitHub {
+      background:none;
+      color: black;
+    }
+    .GitHub:hover{
+      background: none;
+      color: #0b6f9a;
+    }
   </style>
 </head>
 <body>
   <p>你好！我是Hou-Tianqi</p>
-  <p>你也可以叫我中文的英文</p>
   <p>这是我的第一个静态部署的网站</p>
-  <p>GitHub : https://github.com/Hou-Tianqi</p>
+  <p>GitHub个人主页 : <a href="https://github.com/Hou-Tianqi" class="GitHub">https://github.com/Hou-Tianqi</a></p>
   <a href="/MySpace/game.html">一个AI贪吃蛇小游戏</a>
   <p></p>
 
-  <h1>今日/周/月内容：</h1><p></p>
-  <!--标题-->
-  <h2 style="text-align: center;">海晶灯：一款由B站网友共创的我的世界开服器</h2>
+
+<!--标题-->
+<h1>今日/周/月内容：</h1><p></p>
+
+<div style="text-align: center;">
   <!--内容-->
-  <div style="text-align: center;">
-    <img style="width:25%;height: 25%;" src="/MySpace/image.png"><p></p>
-    <a style="display: block;width:10rem;margin: 0 auto;" href="https://github.com/SeaLantern-Studio/SeaLantern">GitHub仓库</a><p></p>
-    <a style="width:10rem;margin: 0 auto;" href="https://www.bilibili.com/video/BV1aBf1BcEjp/?spm_id_from=333.337.search-card.all.click&vd_source=3e0d2a7c4aa460141598763bf7a91d2b">B站宣传视频</a>
-  </div>
+  <h2 style="text-align: center;">当你看到这些文字的时候……</h2>
+  <h1 style="color: red;">美好的寒假已经在你的眼皮子底下蹉跎了！</h1>
+</div>
 
-
+<p></p>
+<h1>摸头专区:</h1>
   <div class="counter-wrap" aria-live="polite">
     <span class="label">摸头次数</span>
     <div>
@@ -109,9 +118,11 @@
   // 将加载动画添加到count元素后面
   countEl.parentNode.appendChild(spinner);
   
+  //禁止使用此API密钥，作者将此密钥放于代码中主要因为访问者方便
   const BIN_ID = '69a17991ae596e708f4f0325';
   const API_KEY = '$2a$10$GfbSXiH62uVyZIIs7GUwj.J7ffAiukw2YhtuuBPwokr1KbqCmIJvq'; 
-  
+  //如果你真的使用了的话……反正这只是免费额度的，作者也不介意被滥用(:
+
   let value = 0;
   let targetSaveCount = null;   // 需要保存的目标数字
   let isSaving = false;         // 是否正在保存
@@ -315,7 +326,7 @@
   
 })();
 </script>
-<p style="color: gray;text-align: center;">由于作者的Pending Requests次数不多（9000次），可能无法保存数据到服务器</p>
+<p style="color: gray;text-align: center;">由于作者的Pending Requests次数不多（每月10000次），可能无法保存数据</p>
 
 </body>
 </html>
