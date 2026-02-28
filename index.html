@@ -70,6 +70,7 @@
     }
   </style>
 </head>
+
 <body>
   <p>你好！我是Hou-Tianqi</p>
   <p>这是我的第一个静态部署的网站</p>
@@ -299,11 +300,6 @@
     saveCount(value);
   });
   
-  // 支持键盘事件
-  btn.addEventListener('keyup', function(e){
-    if (e.key === 'Enter' || e.code === 'Space') btn.click();
-  });
-  
   // 页面关闭前的处理
   window.addEventListener('beforeunload', function(e) {
     // 检查是否有正在进行的保存或未保存的数据
@@ -318,14 +314,15 @@
     }
   });
   
-  // 定期备份到localStorage（每10秒）
+  // 定期备份到localStorage（每分钟）
   setInterval(() => {
     localStorage.setItem('headpatCount_backup', value);
     localStorage.setItem('headpatCount_backup_time', Date.now());
-  }, 10000);
+  }, 60000);
   
 })();
 </script>
+
 <p style="color: gray;text-align: center;">由于作者的Pending Requests次数不多（每月10000次），可能无法保存数据</p>
 
 </body>
