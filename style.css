@@ -61,11 +61,11 @@ td {
 .inc-btn:hover { background: #0e7aa9; }
 .label { color: #235; margin-bottom: 6px; display:block; }
 
-.common {
+.ca {
   background:none;
   color: black;
 }
-.common:hover{
+.ca:hover{
   background: none;
   color: #0b6f9a;
 }
