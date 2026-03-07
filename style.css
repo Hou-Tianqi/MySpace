@@ -61,11 +61,11 @@ td {
 .inc-btn:hover { background: #0e7aa9; }
 .label { color: #235; margin-bottom: 6px; display:block; }
 
-.GitHub {
+.common {
   background:none;
   color: black;
 }
-.GitHub:hover{
+.common:hover{
   background: none;
   color: #0b6f9a;
 }
